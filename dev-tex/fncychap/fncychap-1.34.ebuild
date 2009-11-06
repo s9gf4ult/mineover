@@ -9,7 +9,7 @@ inherit eutils latex-package
 DESCRIPTION=""
 HOMEPAGE=""
 SRC_URI="http://mirror.ctan.org/macros/latex/contrib/fncychap.zip"
-S="${W}/${PN}"
+S="${WORKDIR}/${PN}"
 
 LICENSE=""
 SLOT="0"
@@ -26,7 +26,7 @@ src_compile () {
 
 src_install () {
 	cd ${S}
-	latex-package_src_doinstall sty
+	latex-package_src_install
 	if use doc; then
 		dodoc README
 		dodoc fncychap.pdf
