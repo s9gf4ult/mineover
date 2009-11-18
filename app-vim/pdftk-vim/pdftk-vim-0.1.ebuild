@@ -7,7 +7,15 @@ inherit vim-plugin
 
 DESCRIPTION="vim plugin: easy commenting of code for many filetypes."
 HOMEPAGE="http://www.accesspdf.com/pdftk/#vim_plugin"
+SRC_URI="http://www.accesspdf.com/pdftk/pdftk.vim.zip"
 LICENSE="public-domain"
 KEYWORDS="amd64 x86"
+DEPEND="app-text/pdftk"
 IUSE=""
 
+src_unpack () {
+	unpack ${A}
+	cd ${WORKDIR}
+	mkdir -p ${P}/plugin
+	mv pdftk.vim ${P}/plugin
+}
