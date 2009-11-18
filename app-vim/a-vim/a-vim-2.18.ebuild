@@ -6,8 +6,15 @@ VIM_PLUGIN_VIM_VERSION=7.0
 inherit vim-plugin
 
 DESCRIPTION="vim plugin: easy commenting of code for many filetypes."
-HOMEPAGE="http://www.vim.org/scripts/download_script.php?src_id=7218"
+HOMEPAGE="http://www.vim.org/scripts/script.php?script_id=31"
+SRC_URI="http://www.vim.org/scripts/download_script.php?src_id=7218"
 LICENSE="public-domain"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
+S=${WORKDIR}
 
+src_unpack () {
+	cd ${S}
+	mkdir plugin
+	cp ${DISTDIR}/${A} plugin/a.vim
+}
