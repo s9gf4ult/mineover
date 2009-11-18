@@ -8,7 +8,7 @@ inherit eutils subversion
 MY_P="HandBrake-${PV}"
 DESCRIPTION="Open-source DVD to MPEG-4 converter."
 HOMEPAGE="http://handbrake.fr/"
-ESVN_REPO_URI="svn://svn.handbrake.fr/HandBrake/trunk HandBrake"
+ESVN_REPO_URI="svn://svn.handbrake.fr/HandBrake/trunk"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -26,7 +26,7 @@ DEPEND="sys-libs/zlib
 S="${WORKDIR}/HandBrake"
 
 src_compile() {
-	./configure $(use_enable gtk) \
+	econf $(use_enable gtk) \
 		$(use_enable asm)||die "confugure died: it seems you used asm flag turn it
 		off and try again "
 	cd ${S}/build
