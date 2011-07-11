@@ -1,0 +1,13 @@
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd"> 
+<repositories xmlns="" version="1.0">
+    <repo quality="experimental" status="unofficial">
+        <name>mineover</name>
+        <description>Some experimental ebuilds</description>
+        <homepage>http://github.com/s9gf4ult/mineover</homepage>
+        <owner>
+            <name>Alexey Uimanov</name>
+            <email>s9gf4ult@gmail.com</email>
+        </owner>
+        <source type="git">git://github.com/s9gf4ult/mineover.git</source>
+    </repo>
+</repositories>
