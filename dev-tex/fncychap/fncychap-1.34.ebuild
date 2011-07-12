@@ -13,7 +13,7 @@ S="${WORKDIR}/${PN}"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~x86 ~and64"
 IUSE="doc"
 
 DEPEND=""
