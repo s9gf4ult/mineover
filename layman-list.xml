@@ -8,6 +8,6 @@
             <name>Alexey Uimanov</name>
             <email>s9gf4ult@gmail.com</email>
         </owner>
-        <source type="git">git://github.com/s9gf4ult/mineover.git</source>
+        <source type="git">http://s9gf4ult@github.com/s9gf4ult/mineover.git</source>
     </repo>
 </repositories>
